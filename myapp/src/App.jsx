@@ -5,6 +5,7 @@ import Homecarousel from './components/Homecarousel';
 import ImgCard from './components/ImgCard';
 // import CardImg from 'react-bootstrap/esm/CardImg';
 import data from './components/data';
+import Product from './components/Product';
 
 const nCard=(val) => {
   return (
@@ -24,7 +25,16 @@ function App() {
           <div className="row">
           {
             data.map((val,index) => (
-              <div key={val.id} className='col-md-3'>
+              <div key={val.id} className='col-md-4'>
+              {nCard(val)} 
+              </div>
+            ))
+          }
+          </div>
+          <div className="row">
+          {
+            Product.map((val,index) => (
+              <div key={val.id} className='col-md-4'>
               {nCard(val)} 
               </div>
             ))
