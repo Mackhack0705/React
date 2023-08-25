@@ -19,7 +19,7 @@ const nCard=(val) => {
 }
 function App() {
   return (
-    <div className='container'>
+    <div>
           <NavBar/>
           <Homecarousel/>
           <div className="row">
