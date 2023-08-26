@@ -12,13 +12,14 @@ const ImgCard = (val) => {
   }
   return (
     <div className='box'>
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={val.imgurl} />
+      <Card style={{ width: '18rem',height: '32rem',margin: '10px'}}>
+      <Card.Img className='img' variant="top" src={val.imgurl} />
       <Card.Body>
         <Card.Title>{val.title}</Card.Title>
         <Card.Text>{val.desc}</Card.Text>
-        <Button variant="primary" onClick={handleClick}>Go somewhere</Button>
-        {Count}
+        <Button variant="primary" onClick={handleClick} className='btn'>Add to cart</Button>
+        <Button variant="primary" onClick={handleClick} className='btn'>Remove</Button>
+        {/* {Count} */}
       </Card.Body>
     </Card>
     </div>
